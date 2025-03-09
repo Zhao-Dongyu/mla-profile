@@ -1,0 +1,321 @@
+nhead	q_len	kv_len	bs	FA2	FA3	FlashMLA
+n_warmup: 225, n_repeat: 901
+n_warmup: 255, n_repeat: 1020
+n_warmup: 200, n_repeat: 801
+128	1	128	1	27.2	20.3	28.1
+n_warmup: 239, n_repeat: 957
+n_warmup: 246, n_repeat: 984
+n_warmup: 238, n_repeat: 953
+128	1	128	2	27.3	20.5	28.3
+n_warmup: 236, n_repeat: 946
+n_warmup: 248, n_repeat: 993
+n_warmup: 237, n_repeat: 950
+128	1	128	4	29.0	23.6	28.8
+n_warmup: 238, n_repeat: 952
+n_warmup: 253, n_repeat: 1013
+n_warmup: 18, n_repeat: 74
+128	1	128	8	28.2	22.3	32.1
+n_warmup: 236, n_repeat: 946
+n_warmup: 250, n_repeat: 1001
+n_warmup: 226, n_repeat: 906
+128	1	128	16	28.7	23.2	34.4
+n_warmup: 236, n_repeat: 944
+n_warmup: 248, n_repeat: 992
+n_warmup: 175, n_repeat: 702
+128	1	128	32	30.1	24.7	38.3
+n_warmup: 160, n_repeat: 643
+n_warmup: 215, n_repeat: 863
+n_warmup: 135, n_repeat: 542
+128	1	128	64	53.3	38.4	59.9
+n_warmup: 124, n_repeat: 496
+n_warmup: 176, n_repeat: 706
+n_warmup: 12, n_repeat: 49
+128	1	128	128	98.8	65.1	103.9
+n_warmup: 102, n_repeat: 410
+n_warmup: 137, n_repeat: 551
+n_warmup: 99, n_repeat: 397
+128	1	128	256	166.9	104.8	175.1
+n_warmup: 222, n_repeat: 890
+n_warmup: 238, n_repeat: 954
+n_warmup: 237, n_repeat: 948
+128	1	1024	1	35.4	27.7	29.4
+n_warmup: 202, n_repeat: 809
+n_warmup: 225, n_repeat: 901
+n_warmup: 226, n_repeat: 907
+128	1	1024	2	47.3	34.1	34.7
+n_warmup: 191, n_repeat: 767
+n_warmup: 216, n_repeat: 866
+n_warmup: 212, n_repeat: 850
+128	1	1024	4	54.5	39.3	41.1
+n_warmup: 189, n_repeat: 758
+n_warmup: 214, n_repeat: 856
+n_warmup: 193, n_repeat: 772
+128	1	1024	8	55.4	40.6	53.6
+n_warmup: 149, n_repeat: 599
+n_warmup: 182, n_repeat: 729
+n_warmup: 162, n_repeat: 649
+128	1	1024	16	90.9	60.7	77.8
+n_warmup: 111, n_repeat: 444
+n_warmup: 147, n_repeat: 588
+n_warmup: 131, n_repeat: 526
+128	1	1024	32	148.7	93.6	113.6
+n_warmup: 68, n_repeat: 273
+n_warmup: 99, n_repeat: 396
+n_warmup: 88, n_repeat: 352
+128	1	1024	64	288.7	175.6	207.8
+n_warmup: 38, n_repeat: 155
+n_warmup: 60, n_repeat: 240
+n_warmup: 57, n_repeat: 230
+128	1	1024	128	567.3	339.5	356.9
+n_warmup: 23, n_repeat: 94
+n_warmup: 37, n_repeat: 150
+n_warmup: 33, n_repeat: 132
+128	1	1024	256	984.7	585.4	679.9
+n_warmup: 192, n_repeat: 770
+n_warmup: 214, n_repeat: 858
+n_warmup: 221, n_repeat: 885
+128	1	4096	1	53.4	39.9	37.0
+n_warmup: 191, n_repeat: 767
+n_warmup: 214, n_repeat: 856
+n_warmup: 203, n_repeat: 813
+128	1	4096	2	54.6	40.7	46.9
+n_warmup: 152, n_repeat: 608
+n_warmup: 184, n_repeat: 737
+n_warmup: 173, n_repeat: 692
+128	1	4096	4	88.4	59.3	68.4
+n_warmup: 107, n_repeat: 429
+n_warmup: 142, n_repeat: 568
+n_warmup: 135, n_repeat: 540
+128	1	4096	8	156.1	99.0	108.2
+n_warmup: 60, n_repeat: 242
+n_warmup: 88, n_repeat: 353
+n_warmup: 94, n_repeat: 379
+128	1	4096	16	335.8	205.6	187.4
+n_warmup: 34, n_repeat: 137
+n_warmup: 53, n_repeat: 213
+n_warmup: 59, n_repeat: 238
+128	1	4096	32	651.0	391.1	343.9
+n_warmup: 21, n_repeat: 85
+n_warmup: 34, n_repeat: 137
+n_warmup: 35, n_repeat: 141
+128	1	4096	64	1091.3	647.2	632.8
+n_warmup: 11, n_repeat: 44
+n_warmup: 18, n_repeat: 73
+n_warmup: 19, n_repeat: 77
+128	1	4096	128	2169.9	1280.7	1209.3
+n_warmup: 6, n_repeat: 25
+n_warmup: 10, n_repeat: 43
+n_warmup: 10, n_repeat: 40
+128	1	4096	256	3790.0	2232.8	2351.8
+n_warmup: 192, n_repeat: 771
+n_warmup: 213, n_repeat: 855
+n_warmup: 203, n_repeat: 814
+128	1	8192	1	54.0	40.5	47.4
+n_warmup: 153, n_repeat: 612
+n_warmup: 183, n_repeat: 732
+n_warmup: 179, n_repeat: 716
+128	1	8192	2	87.7	60.3	63.8
+n_warmup: 108, n_repeat: 434
+n_warmup: 143, n_repeat: 573
+n_warmup: 141, n_repeat: 566
+128	1	8192	4	154.1	97.7	100.9
+n_warmup: 67, n_repeat: 270
+n_warmup: 97, n_repeat: 389
+n_warmup: 98, n_repeat: 394
+128	1	8192	8	293.6	179.8	177.6
+n_warmup: 35, n_repeat: 141
+n_warmup: 54, n_repeat: 219
+n_warmup: 62, n_repeat: 250
+128	1	8192	16	633.4	378.6	324.0
+n_warmup: 18, n_repeat: 73
+n_warmup: 29, n_repeat: 119
+n_warmup: 35, n_repeat: 143
+128	1	8192	32	1276.4	759.0	623.2
+n_warmup: 11, n_repeat: 45
+n_warmup: 18, n_repeat: 74
+n_warmup: 19, n_repeat: 78
+128	1	8192	64	2142.0	1264.4	1188.1
+n_warmup: 5, n_repeat: 23
+n_warmup: 9, n_repeat: 38
+n_warmup: 10, n_repeat: 41
+128	1	8192	128	4270.7	2510.3	2315.1
+n_warmup: 3, n_repeat: 13
+n_warmup: 5, n_repeat: 22
+n_warmup: 5, n_repeat: 21
+128	1	8192	256	7466.7	4393.7	4586.2
+n_warmup: 153, n_repeat: 612
+n_warmup: 183, n_repeat: 732
+n_warmup: 176, n_repeat: 707
+128	1	16384	1	87.1	59.8	64.2
+n_warmup: 108, n_repeat: 434
+n_warmup: 142, n_repeat: 569
+n_warmup: 141, n_repeat: 564
+128	1	16384	2	153.7	99.1	101.1
+n_warmup: 75, n_repeat: 301
+n_warmup: 106, n_repeat: 426
+n_warmup: 101, n_repeat: 405
+128	1	16384	4	256.4	158.2	171.0
+n_warmup: 39, n_repeat: 157
+n_warmup: 60, n_repeat: 243
+n_warmup: 63, n_repeat: 254
+128	1	16384	8	559.9	335.2	316.8
+n_warmup: 18, n_repeat: 74
+n_warmup: 30, n_repeat: 121
+n_warmup: 36, n_repeat: 146
+128	1	16384	16	1261.4	748.4	607.9
+n_warmup: 9, n_repeat: 38
+n_warmup: 15, n_repeat: 63
+n_warmup: 19, n_repeat: 79
+128	1	16384	32	2541.0	1500.8	1185.8
+n_warmup: 5, n_repeat: 23
+n_warmup: 9, n_repeat: 38
+n_warmup: 10, n_repeat: 41
+128	1	16384	64	4267.9	2504.1	2309.1
+n_warmup: 2, n_repeat: 11
+n_warmup: 4, n_repeat: 19
+n_warmup: 5, n_repeat: 21
+128	1	16384	128	8510.9	4994.0	4551.6
+n_warmup: 1, n_repeat: 6
+n_warmup: 2, n_repeat: 11
+n_warmup: 2, n_repeat: 10
+128	1	16384	256	14885.8	8735.2	9068.6
+n_warmup: 109, n_repeat: 436
+n_warmup: 143, n_repeat: 572
+n_warmup: 141, n_repeat: 564
+128	1	32768	1	153.2	98.5	101.6
+n_warmup: 75, n_repeat: 301
+n_warmup: 105, n_repeat: 423
+n_warmup: 101, n_repeat: 405
+128	1	32768	2	254.8	159.2	170.7
+n_warmup: 44, n_repeat: 176
+n_warmup: 67, n_repeat: 269
+n_warmup: 63, n_repeat: 255
+128	1	32768	4	488.4	294.4	315.3
+n_warmup: 17, n_repeat: 69
+n_warmup: 28, n_repeat: 113
+n_warmup: 36, n_repeat: 147
+128	1	32768	8	1355.5	801.3	599.8
+n_warmup: 9, n_repeat: 38
+n_warmup: 15, n_repeat: 63
+n_warmup: 20, n_repeat: 80
+128	1	32768	16	2531.9	1488.8	1165.6
+n_warmup: 4, n_repeat: 19
+n_warmup: 8, n_repeat: 32
+n_warmup: 10, n_repeat: 42
+128	1	32768	32	5022.3	2953.4	2301.3
+n_warmup: 2, n_repeat: 11
+n_warmup: 4, n_repeat: 19
+n_warmup: 5, n_repeat: 21
+128	1	32768	64	8500.5	4988.6	4545.1
+n_warmup: 1, n_repeat: 5
+n_warmup: 2, n_repeat: 9
+n_warmup: 2, n_repeat: 10
+128	1	32768	128	16990.4	9963.5	9028.4
+n_warmup: 1, n_repeat: 3
+n_warmup: 1, n_repeat: 5
+n_warmup: 1, n_repeat: 5
+128	1	32768	256	29726.0	17436.2	18018.3
+n_warmup: 75, n_repeat: 302
+n_warmup: 106, n_repeat: 426
+n_warmup: 100, n_repeat: 401
+128	1	65536	1	253.6	158.8	171.7
+n_warmup: 44, n_repeat: 177
+n_warmup: 67, n_repeat: 268
+n_warmup: 64, n_repeat: 259
+128	1	65536	2	487.4	295.7	309.4
+n_warmup: 25, n_repeat: 100
+n_warmup: 40, n_repeat: 160
+n_warmup: 37, n_repeat: 150
+128	1	65536	4	919.9	547.0	591.0
+n_warmup: 8, n_repeat: 33
+n_warmup: 13, n_repeat: 55
+n_warmup: 20, n_repeat: 80
+128	1	65536	8	2945.9	1733.8	1160.7
+n_warmup: 4, n_repeat: 19
+n_warmup: 8, n_repeat: 33
+n_warmup: 10, n_repeat: 42
+128	1	65536	16	5015.6	2950.2	2290.7
+n_warmup: 2, n_repeat: 9
+n_warmup: 4, n_repeat: 16
+n_warmup: 5, n_repeat: 21
+128	1	65536	32	10038.6	5893.9	4551.5
+n_warmup: 1, n_repeat: 5
+n_warmup: 2, n_repeat: 9
+n_warmup: 2, n_repeat: 11
+128	1	65536	64	17012.3	9983.3	9013.1
+n_warmup: 1, n_repeat: 2
+n_warmup: 1, n_repeat: 5
+n_warmup: 1, n_repeat: 5
+128	1	65536	128	33950.8	19903.0	17983.7
+n_warmup: 1, n_repeat: 1
+n_warmup: 1, n_repeat: 2
+n_warmup: 1, n_repeat: 2
+128	1	65536	256	59407.9	34827.6	35920.3
+n_warmup: 44, n_repeat: 177
+n_warmup: 67, n_repeat: 269
+n_warmup: 64, n_repeat: 259
+128	1	131072	1	485.7	294.3	310.2
+n_warmup: 25, n_repeat: 100
+n_warmup: 40, n_repeat: 160
+n_warmup: 37, n_repeat: 149
+128	1	131072	2	916.6	547.0	591.1
+n_warmup: 10, n_repeat: 41
+n_warmup: 17, n_repeat: 68
+n_warmup: 20, n_repeat: 81
+128	1	131072	4	2347.0	1383.2	1150.7
+n_warmup: 4, n_repeat: 16
+n_warmup: 7, n_repeat: 28
+n_warmup: 10, n_repeat: 42
+128	1	131072	8	5862.5	3443.5	2282.8
+n_warmup: 2, n_repeat: 9
+n_warmup: 4, n_repeat: 16
+n_warmup: 5, n_repeat: 21
+128	1	131072	16	10039.9	5873.6	4521.6
+n_warmup: 1, n_repeat: 4
+n_warmup: 2, n_repeat: 8
+n_warmup: 2, n_repeat: 11
+128	1	131072	32	20027.9	11743.4	9013.0
+n_warmup: 1, n_repeat: 2
+n_warmup: 1, n_repeat: 5
+n_warmup: 1, n_repeat: 5
+128	1	131072	64	33943.3	19897.5	17976.5
+n_warmup: 1, n_repeat: 1
+n_warmup: 1, n_repeat: 2
+n_warmup: 1, n_repeat: 2
+128	1	131072	128	67871.6	39777.2	35892.3
+n_warmup: 1, n_repeat: 1
+n_warmup: 1, n_repeat: 1
+n_warmup: 1, n_repeat: 1
+128	1	131072	256	118771.2	69633.1	71750.0
+n_warmup: 25, n_repeat: 100
+n_warmup: 40, n_repeat: 160
+n_warmup: 37, n_repeat: 149
+128	1	262144	1	916.8	546.4	592.5
+n_warmup: 13, n_repeat: 53
+n_warmup: 22, n_repeat: 88
+n_warmup: 20, n_repeat: 81
+128	1	262144	2	1779.4	1052.7	1150.4
+n_warmup: 5, n_repeat: 21
+n_warmup: 8, n_repeat: 35
+n_warmup: 10, n_repeat: 42
+128	1	262144	4	4665.9	2740.8	2269.1
+n_warmup: 2, n_repeat: 8
+n_warmup: 3, n_repeat: 14
+n_warmup: 5, n_repeat: 21
+128	1	262144	8	11957.3	7009.5	4513.6
+n_warmup: 1, n_repeat: 4
+n_warmup: 2, n_repeat: 8
+n_warmup: 2, n_repeat: 11
+128	1	262144	16	20015.1	11732.5	8997.0
+n_warmup: 1, n_repeat: 2
+n_warmup: 1, n_repeat: 4
+n_warmup: 1, n_repeat: 5
+128	1	262144	32	40036.9	23464.4	17961.1
+n_warmup: 1, n_repeat: 1
+n_warmup: 1, n_repeat: 2
+n_warmup: 1, n_repeat: 2
+128	1	262144	64	67866.4	39782.7	35874.4
+n_warmup: 1, n_repeat: 1
+n_warmup: 1, n_repeat: 1
+n_warmup: 1, n_repeat: 1
+128	1	262144	128	135722.9	79535.0	71701.9

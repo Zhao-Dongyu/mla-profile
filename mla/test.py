@@ -20,7 +20,7 @@ class Fixture:
 
     def __init__(self, config: DeepseekV2Config, kv_len: int):
         self.config = config
-        self.bsz = 16
+        self.bsz = 1
         self.q_len = 1
         self.kv_len = kv_len
         dev = 'cuda'
@@ -83,3 +83,17 @@ compressed = absorbed_materialized_cache_compressed_move_elision.compress_kv(fix
 result = absorbed_materialized_cache_compressed_move_elision(fixture.q, fixture.q_pos, compressed)
 l2e, linfe = compute_error(std_result, result)
 print(f'AbsorbedMaterialized_CacheCompressed_MoveElision: Relative L2 error={l2e}, Relative Linf error={linfe}')
+
+flash_infer = FlashInfer(**cfg_dict).cuda()
+flash_infer.load_state_dict(state_dict)
+compressed = flash_infer.compress_kv(fixture.kv, fixture.kv_pos)
+result = flash_infer(fixture.q, fixture.q_pos, compressed)
+l2e, linfe = compute_error(std_result, result)
+print(f'FlashInfer: Relative L2 error={l2e}, Relative Linf error={linfe}')
+
+flash_mla = FlashMLA(**cfg_dict).cuda()
+flash_mla.load_state_dict(state_dict)
+compressed = flash_mla.compress_kv(fixture.kv, fixture.kv_pos)
+result = flash_mla(fixture.q, fixture.q_pos, compressed)
+l2e, linfe = compute_error(std_result, result)
+print(f'FlashMLA: Relative L2 error={l2e}, Relative Linf error={linfe}')
