@@ -35,10 +35,15 @@
 `mla/impl/baseline.py`
 
 Attention的计算过程和传统的MHA并无差异。首先计算attention score：
+
 $$ a = \mathrm{softmax}\left(\frac{q_t^\top k_t + \mathrm{Mask}}{\sqrt{192}}\right) \in \mathbb{R}^{B \times L \times H \times L} $$
+
 计算对V的加权和，并将所有head压平，得到Attention输出：
+
 $$ o = a \cdot v_t \in \mathbb{R}^{B \times L \times H \times 128} \cong \mathbb{R}^{B \times L \times 16384} $$
+
 经过另一个矩阵的投影，就能得到MLA的最终输出：
+
 $$ u = W^O o \in \mathbb{R}^{B \times L \times 5120} $$
 
 
@@ -107,7 +112,7 @@ $$
 {q_t^C}^\top k_t^C = (W^{UQ} c_t^Q)^{\top} W^{UK} c_t^{KV} = {c_t^Q}^{\top}{W^{UQ}}^{\top} W^{UK} c_t^{KV} = ({c_t^Q}^{\top}{W^{UQ}}^{\top} W^{UK}) c_t^{KV} 
 $$
 
-即通过矩阵乘法结合律，可以改为计算$({c_t^Q}^{\top}{W^{UQ}}^{\top} W^{UK})$，避免了解压缩出完整的K矩阵。此外，在原始版本的解压缩的过程中，由于每个token的key都需要与$W^{UK}$相乘才能得到，因此计算量较大；矩阵吸收后，$W^{UK}$只需要对$q_t^C$这一个向量相乘，也大大减少了浮点计算量。
+即通过矩阵乘法结合律，可以改为计算 $({c_t^Q}^{\top}{W^{UQ}}^{\top} W^{UK})$ ，避免了解压缩出完整的K矩阵。此外，在原始版本的解压缩的过程中，由于每个token的key都需要与 $W^{UK}$ 相乘才能得到，因此计算量较大；矩阵吸收后， $W^{UK}$ 只需要对 $q_t^C$ 这一个向量相乘，也大大减少了浮点计算量。
 
 对于V的吸收，则是吸收到后面的 $W_o$ 矩阵那边。
 
@@ -118,7 +123,7 @@ $$
 `mla/impl/absorbed_cache_compressed_move_elision.py`
 
 > 在原始代码中，query_states和key_states会通过拼接RoPE和非RoPE部分得到，拼接过程会产生大量无用的数据拷贝和广播，同时也会占用大量显存空间导致OOM。为此，我们采用MoveElision优化策略，
-即省略此处的拼接RoPE部分和非RoPE部分的过程，而是直接分别计算量部分的额Attention Score并相加（考虑$q_t^\top k_t = {q_t^C}^\top k_t^C + {q_t^R}^\top k_t^R$）：
+即省略此处的拼接RoPE部分和非RoPE部分的过程，而是直接分别计算量部分的额Attention Score并相加
 
 $$ a = \mathrm{softmax}\left(\frac{q_t^\top k_t + \mathrm{Mask}}{\sqrt{192}}\right) = 
 \mathrm{softmax}\left(\frac{{q_t^C}^\top k_t^C + {q_t^R}^\top k_t^R + \mathrm{Mask}}{\sqrt{128 + 64}} \right)
@@ -237,3 +242,7 @@ H20是英伟达对算力进行了非常暴力的阉割的版本（AI算力只有
 - FlashMLA vs FlashInfer
 
     `python flashinfer_vs_flashmla/flashinfer_vs_flashmla.py`
+
+仓库里有的代码图测试方便，考虑的不周全，欢迎提PR～
+
+认识理解不到位的地方，欢迎大佬们指正～
